@@ -1,0 +1,45 @@
+html, body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+    font-family: sans-serif;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+/* ===== ===== */
+
+.grid_gestion{
+    display: grid;
+    height: 100%;
+    width: 100%;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "zone1 zone2 zone2"
+    "zone3 zone4 zone5";
+}
+
+.grid_gestion div:nth-child(odd){
+    background-color: grey;
+}
+.grid_gestion div:nth-child(even){
+    background-color: lightgrey;
+}
+.zone1{
+    grid-area: zone1;
+}
+.zone2{
+    grid-area: zone2;
+}
+.zone3{
+    grid-area: zone3;
+}
+.zone4{
+    grid-area: zone4;
+}
+.zone5{
+    grid-area: zone5;
+}
